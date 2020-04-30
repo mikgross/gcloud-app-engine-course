@@ -1,0 +1,12 @@
+runtime: python37
+env: flex
+service: pubsub
+entrypoint: gunicorn -b :$PORT main:app
+
+# [START gae_flex_pubsub_env]
+env_variables:
+    PUBSUB_TOPIC: gcae-altran
+    # This token is used to verify that requests originate from your
+    # application. It can be any sufficiently random string.
+    PUBSUB_VERIFICATION_TOKEN: 12345678
+# [END gae_flex_pubsub_env]
