@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>Welcome</h1>
+    <h4>Login</h4>
+    <input type="email" placeholder="email" [(ngModel)]="email"> <br>
+    <input type="password" placeholder="password" [(ngModel)]="password"> <br>
+    <button (click)="login(email, password)">Submit</button>
+    <h4>Register</h4>
+    <input type="email" placeholder="email" [(ngModel)]="emailReg"> <br>
+    <input type="password" placeholder="password" [(ngModel)]="passwordReg"> <br>
+    <button (click)="register(emailReg, passwordReg)">Submit</button>
+</div>
