@@ -1,0 +1,15 @@
+runtime: python37
+env: standard
+service: departements
+
+handlers:
+        - url: /.*\.(js)
+          static_files: logic.js
+          upload: logic.js
+ 
+        - url: /.*
+          static_files: index.html
+          upload: index.html
+          secure: always
+
+
