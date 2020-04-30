@@ -1,0 +1,5 @@
+cron:
+        - description: "logger time"
+          url: /task
+          schedule: every 1 mins
+          target: nodeserver
